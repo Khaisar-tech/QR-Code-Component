@@ -1,0 +1,80 @@
+.attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    :root {
+      --body: hsl(212, 45%, 89%);
+      --card:white;
+      --font:hsl(218, 44%, 22%);
+      --para:hsl(216, 15%, 48%);
+
+    }
+
+    body {
+      background-color: var(--body);
+      font-family: "Outfit", sans-serif;
+    }
+
+    .container {
+      width: 99vw;
+      height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      margin: 0 auto;
+      width: 300px;
+      height: 465px;
+      box-shadow: 0px 0px 2px #888888;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--card);
+
+    }
+
+    .card img {
+      height: 260px;
+      width: 270px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    .card .text{
+      margin-right:10px;
+      margin-left:10px;
+    }
+    .card .text h2 {
+      margin-top: 15px;
+      color:hsl(218, 44%, 22%);
+      font-size: 22px;
+
+      
+    }
+    .text p{
+      color:var(--para);
+    }
+    @media only screen and (max-width:600px){
+     .card{
+        width:70vw;
+        height:auto;
+      }
+      .card img{
+        width:85%;
+        height:auto;
+        margin:20px auto;
+      }
+      .card .text p{
+        /* margin: 25px; */
+        padding:0px 15px;
+        /* font-size: 18px; */
+      }
+    }
